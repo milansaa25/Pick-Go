@@ -1,33 +1,31 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import banner1 from "./../assets/banner1.jpg";
-import banner2 from "./../assets/banner2.jpg";
-import banner3 from "./../assets/banner3.jpg";
 
 const banners = [
-  { id: 1, img: "{banner1}" },
-  { id: 2, img: "{banner2}" },
-  { id: 3, img: "{banner3}" },
+  { id: 1, img: "/banners/banner1.jpg" },
+  { id: 2, img: "/banners/banner2.jpg" },
+  { id: 3, img: "/banners/banner3.jpg" },
 ];
 
 export default function BannerSlider() {
   const [current, setCurrent] = useState(0);
 
+  // Auto change every 3s
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % banners.length);
-    }, 3000); // change every 3 seconds
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="relative w-full max-w-7xl mx-auto overflow-hidden rounded-xl">
-      <AnimatePresence>
+      <AnimatePresence mode="wait">
         <motion.img
           key={banners[current].id}
           src={banners[current].img}
           alt={`Banner ${banners[current].id}`}
-          className="w-full object-cover"
+          className="w-full h-[400px] object-cover"
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -100 }}
@@ -40,11 +38,11 @@ export default function BannerSlider() {
         {banners.map((_, idx) => (
           <button
             key={idx}
-            className={`w-3 h-3 rounded-full ${
+            className={`w-3 h-3 rounded-full transition-colors ${
               idx === current ? "bg-blue-500" : "bg-gray-300"
             }`}
             onClick={() => setCurrent(idx)}
-          ></button>
+          />
         ))}
       </div>
     </div>
