@@ -10,7 +10,6 @@ const banners = [
 export default function BannerSlider() {
   const [current, setCurrent] = useState(0);
 
-  // Auto change every 3s
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % banners.length);
