@@ -18,7 +18,7 @@ const Footer = () => {
           {/* Company Info Section */}
           <div>
             <div className="flex items-center space-x-2">
-              <img src={logo} alt="Logo" className="h-12 w-auto" />
+              <img src={logo} alt="Logo" className="h-16 w-auto" />
             </div>
             <p className="mt-4 text-gray-400">
               Shop the latest trends and elevate your wardrobe with our
