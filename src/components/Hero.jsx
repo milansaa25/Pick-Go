@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import logo from "./../assets/Featured.png";
+
 export default function Hero() {
   return (
     <section className="w-full bg-gradient-to-r from-white to-orange-50 pt-28">
@@ -35,7 +36,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
         >
           <img
-            src="{Featured}"
+            src={logo}
             alt="Product"
             className="w-[300px] md:w-[400px] drop-shadow-lg"
           />

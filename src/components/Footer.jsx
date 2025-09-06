@@ -9,6 +9,7 @@ import {
   FaMapMarkerAlt,
 } from "react-icons/fa";
 import logo from "./../assets/logo.png";
+
 const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white py-10">
@@ -17,7 +18,7 @@ const Footer = () => {
           {/* Company Info Section */}
           <div>
             <div className="flex items-center space-x-2">
-              <img src="{logo}" alt="" />
+              <img src={logo} alt="Logo" className="h-12 w-auto" />
             </div>
             <p className="mt-4 text-gray-400">
               Shop the latest trends and elevate your wardrobe with our
@@ -41,7 +42,7 @@ const Footer = () => {
 
           {/* Quick Links Section */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 ">Quick Link</h3>
+            <h3 className="text-lg font-semibold mb-4">Quick Link</h3>
             <ul className="space-y-2 text-gray-400">
               <li>
                 <a href="#" className="hover:text-white">
@@ -116,6 +117,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
         {/* Bottom Bar Section */}
         <div className="flex flex-col md:flex-row justify-between items-center text-gray-400 text-1xl">
           <p>

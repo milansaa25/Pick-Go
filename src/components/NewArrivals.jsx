@@ -1,8 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaShoppingCart } from "react-icons/fa";
-import { span } from "framer-motion/client";
-import logo from "./../assets/NewArrivals.png";
+import logo from "./../assets/NewArrivals.png"; // make sure path is correct
 
 const products = [
   { id: 1, title: "Product Title", price: 328 },
@@ -17,7 +16,7 @@ export default function NewArrivals() {
       <div className="max-w-7xl mx-auto">
         {/* Section Heading */}
         <div className="flex justify-between mb-7">
-          <h2 className="relative  md:text-3xl font-bold text-start mb-8 p-4 inline-block">
+          <h2 className="relative md:text-3xl font-bold text-start mb-8 p-4 inline-block">
             New Arrivals
             <span className="absolute left-4 bottom-0 w-1/3 h-[4px] bg-gradient-to-r from-blue-500 to-purple-500"></span>
           </h2>
@@ -39,12 +38,12 @@ export default function NewArrivals() {
               viewport={{ once: true }}
               className="bg-white rounded-2xl shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition"
             >
-              {/* Product Image Placeholder */}
+              {/* Product Image */}
               <div className="relative bg-gray-200 h-48 flex items-center justify-center">
                 <span className="absolute top-2 left-2 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full">
                   NEW
                 </span>
-                <img src="{NewArrivals}" alt="" />
+                <img src={logo} alt={product.title} className="h-full object-contain" />
               </div>
 
               {/* Product Info */}

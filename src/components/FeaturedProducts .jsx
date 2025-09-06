@@ -1,62 +1,15 @@
 import { FaShoppingCart } from "react-icons/fa";
 import shoes from "./../assets/shoes.png";
+
 const products = [
-  {
-    id: 1,
-    title: "Product Title",
-    price: 328,
-    discount: "-40%",
-    image: "{shoes}",
-  },
-  {
-    id: 2,
-    title: "Product Title",
-    price: 328,
-    discount: "-40%",
-    image: "{shoes}",
-  },
-  {
-    id: 3,
-    title: "Product Title",
-    price: 328,
-    discount: "-40%",
-    image: "{shoes}",
-  },
-  {
-    id: 4,
-    title: "Product Title",
-    price: 328,
-    discount: "-40%",
-    image: "s{shoes}",
-  },
-  {
-    id: 5,
-    title: "Product Title",
-    price: 328,
-    discount: "-40%",
-    image: "{shoes}",
-  },
-  {
-    id: 6,
-    title: "Product Title",
-    price: 328,
-    discount: "-40%",
-    image: "{shoes}",
-  },
-  {
-    id: 7,
-    title: "Product Title",
-    price: 328,
-    discount: "-40%",
-    image: "{shoes}",
-  },
-  {
-    id: 8,
-    title: "Product Title",
-    price: 328,
-    discount: "-40%",
-    image: "{shoes}",
-  },
+  { id: 1, title: "Product Title", price: 328, discount: "-40%", image: shoes },
+  { id: 2, title: "Product Title", price: 328, discount: "-40%", image: shoes },
+  { id: 3, title: "Product Title", price: 328, discount: "-40%", image: shoes },
+  { id: 4, title: "Product Title", price: 328, discount: "-40%", image: shoes },
+  { id: 5, title: "Product Title", price: 328, discount: "-40%", image: shoes },
+  { id: 6, title: "Product Title", price: 328, discount: "-40%", image: shoes },
+  { id: 7, title: "Product Title", price: 328, discount: "-40%", image: shoes },
+  { id: 8, title: "Product Title", price: 328, discount: "-40%", image: shoes },
 ];
 
 export default function FeaturedProducts() {
