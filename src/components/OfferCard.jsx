@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const banners = [
-  { id: 1, img: "public/banner1.png" },
-  { id: 2, img: "public/banner2.jpg" },
-  { id: 3, img: "public/banner3.png" },
+  { id: 1, img: "banner1.png" },
+  { id: 2, img: "banner2.jpg" },
+  { id: 3, img: "banner3.png" },
 ];
 
 export default function BannerSlider() {
